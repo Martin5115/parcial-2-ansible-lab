@@ -81,9 +81,13 @@ Resultado final del playbook (`PLAY RECAP` con `failed=0` en ambos servidores) y
 
 ![Ejecución exitosa del playbook](captura.png)
 
+<img width="1586" height="783" alt="captura" src="https://github.com/user-attachments/assets/f88ede25-3ff3-4544-82d2-d4f93b1d7294" />
+
+
 Prueba de conexión (`ping`) e inicio de la ejecución:
 
-![Ping e inicio del playbook](captura_inicio.png)
+<img width="1600" height="860" alt="captura2" src="https://github.com/user-attachments/assets/daaedcbd-1f4f-4e6e-98b5-f3dd06758b32" />
+
 
 ## Detener el laboratorio
 
