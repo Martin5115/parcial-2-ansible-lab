@@ -1,0 +1,45 @@
+---
+- name: Practica 2do Parcial Ansible - Administrar servidores Docker
+  hosts: docker
+  gather_facts: true
+
+  vars:
+    demo_dir: /tmp/ansible-demo
+
+  tasks:
+    - name: Mostrar el nombre del host
+      ansible.builtin.debug:
+        msg: "Nombre del host: {{ inventory_hostname }}"
+
+    - name: Mostrar el sistema operativo
+      ansible.builtin.debug:
+        msg: "Sistema operativo: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+
+    - name: Crear el directorio /tmp/ansible-demo
+      ansible.builtin.file:
+        path: "{{ demo_dir }}"
+        state: directory
+        mode: "0755"
+
+    - name: Crear el archivo info.txt con el nombre del servidor y el sistema operativo
+      ansible.builtin.copy:
+        dest: "{{ demo_dir }}/info.txt"
+        mode: "0644"
+        content: |
+          Servidor: {{ inventory_hostname }}
+          Sistema operativo: {{ ansible_distribution }} {{ ansible_distribution_version }}
+
+    - name: Crear los directorios logs, backup y config mediante un loop
+      ansible.builtin.file:
+        path: "{{ demo_dir }}/{{ item }}"
+        state: directory
+        mode: "0755"
+      loop:
+        - logs
+        - backup
+        - config
+
+    - name: Mostrar un mensaje unicamente cuando el sistema operativo sea Ubuntu
+      ansible.builtin.debug:
+        msg: "{{ inventory_hostname }} es un servidor Ubuntu"
+      when: ansible_distribution == "Ubuntu"
