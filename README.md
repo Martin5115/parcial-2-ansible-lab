@@ -1,15 +1,15 @@
 # Práctica 2do Parcial - Ansible
 
 -ITLA-
-Nombre	Martin Gomez
+Nombre:	Martin Gomez
 
-Matrícula	2024-2481
+Matrícula:	2024-2481
 
-Profesor	Elvys Cruz
+Profesor:	Elvys Cruz
 
-Fecha	12/11/2026
+Fecha:	12/11/2026
 
-Tema	Segundo Parcial - Electiva 2
+Tema:	Segundo Parcial - Electiva 2
 
 ## Objetivo del parcial
 
