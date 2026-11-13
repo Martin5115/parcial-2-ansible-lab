@@ -79,8 +79,6 @@ Sistema operativo: Ubuntu 24.04
 
 Resultado final del playbook (`PLAY RECAP` con `failed=0` en ambos servidores) y verificación del archivo `info.txt`:
 
-![Ejecución exitosa del playbook](captura.png)
-
 <img width="1600" height="860" alt="captura2" src="https://github.com/user-attachments/assets/722c38d3-c8e3-4aa0-b693-45b05130bff6" />
 
 Prueba de conexión (`ping`) e inicio de la ejecución:
