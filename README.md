@@ -1,6 +1,13 @@
 # Práctica 2do Parcial - Ansible
 
-## Objetivo de la práctica
+ITLA 
+Nombre	Martin Gomez
+Matrícula	2024-2481
+Profesor	Elvys Cruz
+Fecha	12/11/2026
+Tema	Segundo Parcial - Electiva 2
+
+## Objetivo del parcial
 
 Crear un laboratorio con dos servidores Linux (Ubuntu 24.04) utilizando Docker y
 administrarlos con Ansible mediante un inventario y un playbook que muestra
